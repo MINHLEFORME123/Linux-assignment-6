@@ -13,6 +13,8 @@
 - **Command:** `apt --version`
 - **Output:** `apt 2.4.8 (amd64)` (Verified on local system)
 
+
+
 ### 2. Update the Package List
 - **Command:** `sudo apt update`
 - **Why is this step important?** This command synchronizes the local package index with the remote repositories. It ensures that the system is aware of the newest versions, security patches, and dependencies available before any installation or upgrade takes place.
@@ -25,7 +27,7 @@
 
 ### 4. View Pending Updates
 - **Command:** `apt list --upgradable`
-
+- <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/39c36a4c-2b05-4553-8861-cc6ff358194d" />
 ---
 
 ## Part 2: Installing & Managing Packages
@@ -46,6 +48,7 @@
 - **Output:** `gimp/jammy,now 2.10.30-1build1 amd64 [installed]` (Example)
 
 ---
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a2d3f390-383b-4505-a10e-2df3e8ee1942" />
 
 ##  Part 3: Removing & Cleaning Packages
 
@@ -66,6 +69,7 @@
 ### 4. Clean up Downloaded Package Files
 - **Command:** `sudo apt clean`
 - **Function:** This clears the local cache of downloaded `.deb` files stored in `/var/cache/apt/archives`.
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/758e3279-186b-423a-9c92-25e7bc238c0d" />
 
 ---
 
@@ -93,5 +97,6 @@ I tested the package locking feature to prevent unintended updates.
 - **Hold Command:** `sudo apt-mark hold gimp`
 - **Unhold Command:** `sudo apt-mark unhold gimp`
 - **Reasoning:** Holding a package is essential when you need a specific version to remain unchanged, such as when a newer version is known to have bugs or is incompatible with existing robotics projects/libraries.
+<img width="882" height="846" alt="image" src="https://github.com/user-attachments/assets/707aa69d-551d-4056-9831-63b073c013ad" />
 
 ---
